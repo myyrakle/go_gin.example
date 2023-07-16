@@ -1,6 +1,6 @@
 package main
 
-import gugudan "gin_example/internal"
+import gugudan "github.com/myyrakle/go_gin_example/internal"
 
 func main() {
 	gugudan.Gugudan()
