@@ -11,6 +11,8 @@ FROM alpine:latest AS deploy
 WORKDIR /home
 RUN mkdir app
 COPY ./run.sh /home/app/run.sh
-RUN --from=build /home/app/main /home/app/main
+COPY --from=build /home/app/main /home/app
+WORKDIR /home/app
+RUN ls -la
 ENTRYPOINT [ "/bin/sh", "/home/app/run.sh" ]
 EXPOSE 8080

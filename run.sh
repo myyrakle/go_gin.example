@@ -1,1 +1,1 @@
-./main
+/home/app/main
