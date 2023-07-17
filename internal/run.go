@@ -2,6 +2,7 @@ package internal
 
 import (
 	"net/http"
+	 _ "net/http/pprof"
 
 	"github.com/gin-gonic/gin"
 )
